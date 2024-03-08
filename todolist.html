@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h1 style="text-align: center;"><em>To Do List</em></h1>
+
+</head>
+
+<body style="background-image: url()">
+
+
+    <div class="checkbox" style=" text-align: justify; height: 250px; font-family: Cursive;">
+        <input type="text" id="field" placeholder="Enter a task" style="height: 25px; padding-left: 130px;">
+        <input type="button" onclick="add_task()" value="+"
+            style="background-color: green; color: white; padding: 8px;">
+        <br>
+
+        <table id="myTable" style="width: 800px; padding-left:150px; padding-top: 40px; padding-left: 350px;">
+            <thead>
+                <tr>
+                    <th style="text-align:left;">Tasks</th>
+                    <th style="text-align:left;">Priority</th>
+                </tr>
+            </thead>
+        </table>
+
+        <form id="myform" style="padding-left: 350px;">
+            <ol type="1">
+                <li>
+
+                    <input type="checkbox" id="checkbox1" name="" value="">
+                    <label for="checkbox1"> Answer your emails</label>
+
+
+                    <label for="priority" id="priority"></label>
+                    <select name="urgency" id="urgency">
+                        <option value="Urgent" style="background-color: red; color: white;"></option>
+                        <option value="Important">Important</option>
+                        <option value="Very Important">Very Important</option>
+                    </select>
+                    <br>
+                </li>
+                <li>
+                    <input type="checkbox" id="checkbox2" name="" value="">
+                    <label for="checkbox2"> Send mom a birthday card</label>
+
+
+                    <label for="Priority"></label>
+                    <select name="urgency" id="urgency">
+                        <option value="Urgent">Urgent</option>
+                        <option value="Important">Important</option>
+                        <option value="Very Important">Very Important</option>
+                    </select>
+                    <br>
+                </li>
+
+                <li>
+                    <input type="checkbox" id="checkbox3" name="" value="">
+                    <label for="checkbox3">Buy more post-its</label>
+
+                    <label for="Priority"></label>
+                    <select name="urgency" id="urgency">
+                        <option value="Urgent">Urgent</option>
+                        <option value="Important">Important</option>
+                        <option value="Very Important">Very Important</option>
+                    </select>
+                    <br>
+                </li>
+                <li>
+                    <input type="checkbox" id="checkbox4" name="" value="">
+                    <label for="checkbox4"> Wake Up in the morning</label>
+
+                    <label for="Priority"></label>
+                    <select name="urgency" id="urgency">
+                        <option value="Urgent">Urgent</option>
+                        <option value="Important">Important</option>
+                        <option value="Very Important">Very Important</option>
+                    </select>
+                    <br>
+                </li>
+                <li>
+                    <input type="checkbox" id="checkbox5" name="" value="">
+                    <label for="checkbox5">Dealing with e-mails</label>
+
+                    <label for="Priority"></label>
+                    <select name="urgency" id="urgency">
+                        <option value="Urgent">Urgent</option>
+                        <option value="Important">Important</option>
+                        <option value="Very Important">Very Important</option>
+                    </select>
+                    <br>
+                </li>
+                <li>
+                    <input type="checkbox" id="checkbox6" name="" value="">
+                    <label for="checkbox6">Managing projects</label>
+
+                    <label for="Priority"></label>
+                    <select name="urgency" id="urgency">
+                        <option value="Urgent">Urgent</option>
+                        <option value="Important">Important</option>
+                        <option value="Very Important">Very Important</option>
+                    </select>
+                    <br>
+                </li>
+                <li>
+                    <input type="checkbox" id="checkbox7" name="" value="">
+                    <label for="checkbox7">Learning new things</label>
+
+                    <label for="Priority"></label>
+                    <select name="urgency" id="urgency">
+                        <option value="Urgent">Urgent</option>
+                        <option value="Important">Important</option>
+                        <option value="Very Important">Very Important</option>
+                    </select>
+                    <br>
+                </li>
+                <li>
+                    <input type="checkbox" id="checkbox8" name="" value="">
+                    <label for="checkbox8"> Maintaining your portfolio</label>
+
+                    <label for="Priority"></label>
+                    <select name="urgency" id="urgency">
+                        <option value="Urgent">Urgent</option>
+                        <option value="Important">Important</option>
+                        <option value="Very Important">Very Important</option>
+                    </select>
+                    <br>
+                </li>
+                <li>
+                    <input type="checkbox" id="checkbox9" name="" value="">
+                    <label for="checkbox9"> Knowing what groceries to buy</label>
+
+                    <label for="Priority"></label>
+                    <select name="urgency" id="urgency">
+                        <option value="Urgent">Urgent</option>
+                        <option value="Important">Important</option>
+                        <option value="Very Important">Very Important</option>
+                    </select>
+                    <br>
+                </li>
+                <li>
+                    <input type="checkbox" id="checkbox10" name="" value="">
+                    <label for="checkbox10"> Places to visit on your next holiday</label>
+
+                    <label for="Priority"></label>
+                    <select name="urgency" id="urgency">
+                        <option value="Urgent">Urgent</option>
+                        <option value="Important">Important</option>
+                        <option value="Very Important">Very Important</option>
+                    </select>
+                    <br>
+                </li>
+                <li>
+                    <input type="checkbox" id="checkbox11" name="" value="">
+                    <label for="checkbox11"> Movies to watch on Netflix</label>
+
+                    <label for="Priority"></label>
+                    <select name="urgency" id="urgency">
+                        <option value="Urgent">Urgent</option>
+                        <option value="Important">Important</option>
+                        <option value="Very Important">Very Important</option>
+                    </select>
+                    <br>
+                </li>
+
+            </ol>
+    </div>
+    </div>
+    </div>
+    </form>
+
+    <ul
+        style="position: relative; bottom: 230px; line-height: 40px; list-style: none; padding: 10px; padding-left: 50px;">
+
+        <label for="Work"></label>
+        <select name="urgency" id="urgency" style="border:0px;">
+            <option value="Work">Work</option>
+            <option value="Important">Important</option>
+            <option value="Very Important">Very Important</option>
+        </select>
+        </li>
+
+        <li>Life</li>
+        <li>Schedule</li>
+        <li>Projects</li>
+    </ul>
+
+    <script>
+
+        function add_task() {
+            let newItem = document.getElementById('field').value.trim();
+
+            // Check if the input field is not empty
+            if (newItem !== '') {
+                let checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.name = 'tasks';
+                checkbox.value = newItem;
+
+                let label = document.createElement('label');
+                label.appendChild(document.createTextNode(newItem));
+
+                let br = document.createElement('br');
+
+                let taskContainer = document.querySelector('.label');
+                taskContainer.appendChild(checkbox);
+                taskContainer.appendChild(label);
+                taskContainer.appendChild(br);
+
+                // Clear the input field after adding a task
+                document.getElementById('field').value = '';
+            } else {
+                // Display an alert or handle the empty input case
+                alert('Please enter a task before adding.');
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
